@@ -19,10 +19,30 @@
     .gradient-bg {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     }
+    .soft-shadow {
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    .hover-lift {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+    .icon-circle {
+      background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
+    }
+    .service-card {
+      background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+      border: 1px solid #e2e8f0;
+    }
+    .feature-icon {
+      background: linear-gradient(45deg, #a8edea 0%, #fed6e3 100%);
+    }
     .logo {
-      max-height: 200px;
+      max-height: 80px;
       height: auto;
-      }
+    }
   </style>
 </head>
 <body class="bg-gray-50 leading-relaxed">
@@ -30,8 +50,7 @@
   <!-- Header Section -->
   <header class="gradient-bg text-white py-16">
     <div class="container mx-auto px-6">
-      <!-- استخدم flex-row-reverse ليكون الشعار على اليمين -->
-      <div class="flex flex-row-reverse items-center justify-center gap-6 mb-8">
+      <div class="flex items-center justify-center gap-6 mb-8">
         <img src="Darb El-Sunna.png" alt="شعار الموقع" class="logo">
         <div class="text-center">
           <i class="fas fa-book-open text-6xl mb-2 opacity-90"></i>
@@ -47,7 +66,6 @@
       </div>
     </div>
   </header>
-
     <!-- About Section -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-6">
