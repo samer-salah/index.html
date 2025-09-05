@@ -39,10 +39,10 @@
     .feature-icon {
       background: linear-gradient(45deg, #a8edea 0%, #fed6e3 100%);
     }
-  .logo {
-  max-height: 120px; 
+ .logo {
+  max-height: 120px;
   height: auto;
-  position: absolute;
+  position: relative;
   top: 20px;
   right: 20px;
 }
@@ -51,21 +51,24 @@
 <body class="bg-gray-50 leading-relaxed">
 
   <!-- Header Section -->
-  <header class="gradient-bg text-white py-16">
-    <div class="container mx-auto px-6">
-      <div class="flex items-center justify-center gap-6 mb-8">
-        <img src="Darb El-Sunna.png" alt="شعار الموقع" class="logo">
-        <div class="text-center">
-          <i class="fas fa-book-open text-6xl mb-2 opacity-90"></i>
-          <h1 class="main-title text-5xl font-bold">درب السنة</h1>
-          <p class="text-xl opacity-90">مكتب البحث العلمي والتفريغ الصوتي</p>
-        </div>
-      </div>
-      <div class="max-w-3xl mx-auto text-center">
-        <p class="text-lg leading-relaxed opacity-95">
-          نقدم خدمات متخصصة في البحث العلمي والتفريغ الصوتي بجودة عالية ودقة متناهية، 
-          مع فريق من المختصين ذوي الخبرة في مختلف المجالات الأكاديمية والعلمية
-        </p>
+  <header class="gradient-bg text-white py-16 relative">
+  <div class="container mx-auto px-6 relative">
+    
+    <!-- اللوجو في اليمين -->
+    <img src="Darb El-Sunna.png" alt="شعار الموقع" class="logo">
+
+    <!-- العنوان في المنتصف -->
+    <div class="text-center">
+      <i class="fas fa-book-open text-6xl mb-2 opacity-90"></i>
+      <h1 class="main-title text-5xl font-bold">درب السنة</h1>
+      <p class="text-xl opacity-90">مكتب البحث العلمي والتفريغ الصوتي</p>
+    </div>
+
+    <div class="max-w-3xl mx-auto text-center mt-6">
+      <p class="text-lg leading-relaxed opacity-95">
+        نقدم خدمات متخصصة في البحث العلمي والتفريغ الصوتي بجودة عالية ودقة متناهية، 
+        مع فريق من المختصين ذوي الخبرة في مختلف المجالات الأكاديمية والعلمية
+      </p>
       </div>
     </div>
   </header>
@@ -290,6 +293,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
